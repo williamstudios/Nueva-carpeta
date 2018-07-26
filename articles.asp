@@ -1,24 +1,4 @@
 
-<%
-'On Error Resume Next
-
-' ************ Eliminaci�n de cache *****************
-Response.Expires = 0
-Response.ExpiresAbsolute = Now() - 1
-Response.AddHeader "pragma","no-cache"
-Response.AddHeader "cache-control","private"
-Response.AddHeader "cache-control","no-cache"
-Response.AddHeader "cache-control","no-store"
-Response.CacheControl = "no-cache"
-
-'// Validar si es un usuario con registro previo de acceso //
-If (Session("UserFP"&Session.SessionID) = "") And Trim(Request.QueryString("Session")) = "" And Trim(Request.QueryString("Categoria")) = "" Then
-  Response.Redirect("login.asp")
-End If
-
-strActiveMenu = "Finanzas"
-strActiveSubMenu = "articles"
-%>
 <!--#include virtual="/fp_mx_nl_linares_lkq_keystone/Connections/conn.asp" -->
 <!--#include virtual="/fp_mx_nl_linares_lkq_keystone/assets/includes/functions.asp" -->
 <!--#include virtual="/fp_mx_nl_linares_lkq_keystone/assets/includes/RFC1321.asp" -->
