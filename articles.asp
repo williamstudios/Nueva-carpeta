@@ -1,40 +1,4 @@
-<%@LANGUAGE="VBSCRIPT" CODEPAGE="65001"%>
-<%
-'/////////////////////////////////////////////////////////
-'/////////////////////////////////////////////////////////
-'/////////////////////////////////////////////////////////
-'/// Pagina:          articles.asp
-'/// Fecha creaci�n:  09/01/2018
-'/// Editor:          Willy de leon
-'/// Correo editor:
-'/// Descripcion:     articles.asp
-'///
-'/// --- BITACORA DE EDICION -----------------------------
-'/// 09/01/2018:    Inicio de programacion.
-'/// 10/01/2018
-'/// ------------- AUDITORÍA -----------------------------
-'/// 1. Validación campos: Willy de leon (12/01/2018).
-'/// 2. Alertas javascript: Willy de leon (12/01/2018).
-'/// 3. Caracteres máximos: Willy de leon (12/01/2018).
-'/// 4. Correcta tabulación código: Willy de leon (12/01/2018).
-'/// 5. Tablas: Willy de leon (12/01/2018).
-'/// 6. Combos: Willy de leon (12/01/2018).
-'/// 7. Campos numéricos: Willy de leon (12/01/2018).
-'/// 8. Campos de texto: Willy de leon (12/01/2018).
-'/// 9. Campos de fecha: Willy de leon (12/01/2018).
-'/// 10. Campos de rango de fechas: Willy de leon (12/01/2018).
-'/// 11. Campos de checkbox y radio buttons: Willy de leon (12/01/2018) NA.
-'/// 12. Funciones de javascript: Willy de leon (12/01/2018).
-'/// 13. Código basura: Willy de leon (12/01/2018).
-'/// 14. Scripts y clases: Willy de leon (12/01/2018).
-'/// 15. Modals: Ruben Willy de leon (12/01/2018) NA.
-'/// 16. Update Lucid: Pendiente.
-'/// 17. Script TimeOut: Willy de leon (12/01/2018).
-'/// 18. Recordsets: Willy de leon (12/01/2018).
-'/////////////////////////////////////////////////////////
-'/////////////////////////////////////////////////////////
-'/////////////////////////////////////////////////////////
-%>
+
 <%
 'On Error Resume Next
 
