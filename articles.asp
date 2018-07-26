@@ -1,29 +1,4 @@
 
-<!--#include virtual="/fp_mx_nl_linares_lkq_keystone/Connections/conn.asp" -->
-<!--#include virtual="/fp_mx_nl_linares_lkq_keystone/assets/includes/functions.asp" -->
-<!--#include virtual="/fp_mx_nl_linares_lkq_keystone/assets/includes/RFC1321.asp" -->
-<%
-'// Codigo para traer la lista de departamentos //
-set cmdDepartamentos = Server.CreateObject("ADODB.Command")
-cmdDepartamentos.ActiveConnection = MM_conn_STRING
-cmdDepartamentos.CommandText = "spSys_deptos"
-cmdDepartamentos.CommandType = 4
-cmdDepartamentos.CommandTimeout = 0
-cmdDepartamentos.Prepared = true
-cmdDepartamentos.Parameters.Append cmdDepartamentos.CreateParameter("@RETURN_VALUE", 3, 4)
-cmdDepartamentos.Parameters.Append cmdDepartamentos.CreateParameter("@Opcion", 200, 1, 10, "clave")
-cmdDepartamentos.Parameters.Append cmdDepartamentos.CreateParameter("@SessionId", 200, 1,100,Trim(Session("UserFP"&Session.SessionID)))
-set rsDepartamentos = cmdDepartamentos.Execute
-rsDepartamentos_numRows = 0
-%>
-<!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
-<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
-<!--[if !IE]><!-->
-<html lang="en">
-<!--<![endif]-->
-<!-- BEGIN HEAD -->
-
 <head>
 <meta charset="utf-8" />
 <!--#include virtual="/fp_mx_nl_linares_lkq_keystone/assets/includes/title.asp"-->
